@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="div" class="container">
+    <div id="app" class="container">
         <div class="inner-container">
             <header class="header">
                 <h2 class="subtitle">Todo list</h2>
@@ -22,8 +22,22 @@
             <main class="main">
                 <div class="add-todo">
                     <div class="input">
-                        <input type="text">
+                        <input type="text" placeholder="Add todo">
+                        <i class="fas fa-plus-square"></i>
                     </div>
+                </div>
+                <div class="todos">
+                    <ul>
+                        <li v-for="(todo, index) in todos" class="todo">
+                            <div class="todo-text">
+                                <h3>{{todo.tag}}</h3>
+                                <h2>{{todo.text}}</h2>
+                                <h4>{{todo.author}}</h4>
+                            </div>
+                            <i class="far fa-times-circle"></i>
+                        </li>
+
+                    </ul>
                 </div>
             </main>
         </div>

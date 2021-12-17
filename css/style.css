@@ -12,12 +12,37 @@
 .inner-container {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 40%;
     margin: auto;
-
+    background-color:#3535ec;
+    border-radius: 3em;
+    padding: 3em;
+}
+.main{
+    margin: auto;
+    width: 85%;
+}
+.header{
+    margin: auto;
+    
+}
+.input{
+    border: solid 1px lightgray;
+    padding: 1em;
+    border-radius: 1em;
+}
+.input input{
+    width: 90%;
+}
+.todo{
+    background-color: greenyellow;
+    margin: 1em 0;
+    border-radius: 1em;
+    padding: 1em;
 }
 
 .todo-text {
-    width: 80%;
+    width: 90%;
     display: inline-block;
+    
 }
